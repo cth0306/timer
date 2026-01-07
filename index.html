@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="日付、曜日、時間を表示するタイマー">
+    <title>タイマー</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background-animation">
+        <div class="gradient-orb orb-1"></div>
+        <div class="gradient-orb orb-2"></div>
+        <div class="gradient-orb orb-3"></div>
+        <div class="grid-pattern"></div>
+    </div>
+    <main class="container" role="main" aria-label="タイマー">
+        <div class="timer">
+            <section class="date-section" aria-label="日付情報">
+                <time class="date" id="date" datetime="" aria-live="polite"></time>
+                <div class="day" id="day" aria-label="曜日"></div>
+            </section>
+            <section class="time-section" aria-label="時刻情報">
+                <time class="time" id="time" datetime="" aria-live="polite" aria-label="現在時刻"></time>
+            </section>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
